@@ -16,12 +16,23 @@ export const createNewAccount = (name) => {
 
     newAccount.save()
         .then(doc => {
-            console.log(doc);
+            console.log('doc ' + doc);
             return doc;    
         })
         .catch(err => {
             console.error(err)
             return err;
         })
-    
+}
+
+export const retrieveAccount = (accountName) => {
+    mAccount.find({
+        name: `${accountName}`
+    })
+    .then(response => {
+        console.log('resp ' + response);
+        return response;
+    }).catch(err => {
+        console.error(err)
+    })
 }

@@ -9,11 +9,13 @@ var Account = (function () {
     return Account;
 }());
 exports.Account = Account;
-exports.typeDef = "\n    type Account {\n        name: String\n        invoices: [Invoice]\n    },\n\n    extend type Query {\n        getAccs: [Account]\n    },\n\n    extend type Mutation {\n        addAcc(name: String): [Account]\n    }\n";
+exports.typeDef = "\n    type Account {\n        name: String\n        invoices: [Invoice]\n    },\n\n    extend type Query {\n        getAcc(name: String): [Account]\n    },\n\n    extend type Mutation {\n        addAcc(name: String): Account\n    }\n";
 exports.resolvers = {
     Query: {
-        getAccs: function (root, args, context) {
-            return getAccounts();
+        getAcc: function (root, args, context) {
+            var acc = getAccount(args);
+            console.log('derp ' + acc);
+            return acc;
         }
     },
     Mutation: {
@@ -22,8 +24,8 @@ exports.resolvers = {
 };
 var acc1 = { name: "derp", invoices: [null] };
 exports.accs = [acc1];
-var getAccounts = function () {
-    return exports.accs;
+var getAccount = function (args) {
+    return mAccount_1.retrieveAccount(args.name);
 };
 var addAcc = function (args) {
     return mAccount_1.createNewAccount(args.name);

@@ -1,5 +1,5 @@
 import { Invoice } from './invoice';
-import { createNewAccount } from '../../MongoDB/DatabaseTypes/mAccount'
+import { createNewAccount, retrieveAccount, outerResponse } from '../../MongoDB/DatabaseTypes/mAccount'
 
 // typescript definition
 export class Account {
@@ -20,19 +20,21 @@ export const typeDef: string = `
     },
 
     extend type Query {
-        getAccs: [Account]
+        getAcc(name: String): [Account]
     },
 
     extend type Mutation {
-        addAcc(name: String): [Account]
+        addAcc(name: String): Account
     }
 `;
 
 // graphQL resolvers
 export const resolvers = {
     Query: {
-        getAccs: (root, args, context) => {
-            return getAccounts();
+        getAcc: (root, args, context) => {
+            let acc = getAccount(args);
+            console.log('derp ' + acc);
+            return acc;
         }
     },
     Mutation: {
@@ -44,8 +46,8 @@ export const resolvers = {
 const acc1: Account = { name : "derp", invoices: [null]};
 export const accs:  Array<Account> = [acc1];
 
-const getAccounts = () => {
-    return accs;
+const getAccount = (args) => {
+    return retrieveAccount(args.name);
 }
 
 const addAcc = (args) => {

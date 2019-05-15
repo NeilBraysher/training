@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 var server = '127.0.0.1:27017';
 var database = 'rikkiTikkiTavi';
 var Database = (function () {

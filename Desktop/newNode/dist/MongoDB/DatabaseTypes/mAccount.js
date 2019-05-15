@@ -13,11 +13,22 @@ exports.createNewAccount = function (name) {
     });
     newAccount.save()
         .then(function (doc) {
-        console.log(doc);
+        console.log('doc ' + doc);
         return doc;
     })
         .catch(function (err) {
         console.error(err);
         return err;
+    });
+};
+exports.retrieveAccount = function (accountName) {
+    mAccount.find({
+        name: "" + accountName
+    })
+        .then(function (response) {
+        console.log('resp ' + response);
+        return response;
+    }).catch(function (err) {
+        console.error(err);
     });
 };
