@@ -1,0 +1,14 @@
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\bin\Debug\netcoreapp2.2\ExploreCalifornia2.deps.json
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\bin\Debug\netcoreapp2.2\ExploreCalifornia2.runtimeconfig.json
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\bin\Debug\netcoreapp2.2\ExploreCalifornia2.runtimeconfig.dev.json
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\bin\Debug\netcoreapp2.2\ExploreCalifornia2.dll
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\bin\Debug\netcoreapp2.2\ExploreCalifornia2.pdb
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.csproj.CoreCompileInputs.cache
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.RazorAssemblyInfo.cache
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.RazorAssemblyInfo.cs
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.AssemblyInfoInputs.cache
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.AssemblyInfo.cs
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.RazorTargetAssemblyInfo.cache
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.dll
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.pdb
+C:\Users\neil.braysher\source\repos\ExploreCalifornia2\ExploreCalifornia2\obj\Debug\netcoreapp2.2\ExploreCalifornia2.csprojAssemblyReference.cache
